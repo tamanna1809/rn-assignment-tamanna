@@ -1,10 +1,11 @@
-import React, { useState } from 'react'; // ✅ import useState
+import React, { useState } from 'react'; 
 import { View, Text, TextInput, StyleSheet, TouchableOpacity } from 'react-native';
-import Card from './Card';
+import Card from './Card.js';
+
 
 export default function UnitConverter() {
   const [value, setValue] = useState('');
-  const [mode, setMode] = useState('mToFt'); // default conversion
+  const [mode, setMode] = useState('mToFt'); 
 
   const convertValue = (val) => {
     const num = parseFloat(val);
@@ -97,3 +98,9 @@ const styles = StyleSheet.create({
   },
   result: { fontSize: 18, fontWeight: '600', textAlign: 'center', color: '#1e90ff' },
 });
+
+
+
+
+
+
